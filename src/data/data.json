@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Razer Kraken X Ultralight Gaming Headset: 7.1 Surround Sound - Lightweight Aluminum Frame - Bendable Cardioid Microphone - PC",
+    "color": "Classic Black",
+    "size": "Headset",
+    "price": "$39.99",
+    "oldPrice": "$49.99",
+    "imgUrl": "https://m.media-amazon.com/images/I/61QIMDB3YTL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "SteelSeries Arctis 3 - All-Platform Gaming Headset - for PC, PlayStation 4, Xbox One, Nintendo Switch, VR, Android, and iOS - Black",
+    "color": "Black",
+    "size": "Wired",
+    "price": "$51.99",
+    "oldPrice": "$55.00",
+    "imgUrl": "https://m.media-amazon.com/images/I/81FpaX4SvWL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ajsaki K9 PS4 Gaming Headset, Stereo Xbox One Gaming Headset with Mic & RGB Lights, Noise Cancelling Over Ear Headphones Compatible with PC, PS4, PS5, Nintendo Switch, Xbox One, Mac (Black)",
+    "color": "Black",
+    "size": "Headset",
+    "price": "$49.99",
+    "oldPrice": "$50.99",
+    "imgUrl": "https://m.media-amazon.com/images/I/71id5crNZSL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "HyperX Cloud Stinger – Gaming Headset, Lightweight, Comfortable Memory Foam, Swivel to Mute Noise-Cancellation Microphone, Works on PC, PS4, PS5, Xbox One, Xbox Series X|S, Nintendo Switch and Mobile",
+    "color": "Black",
+    "size": "Stereo",
+    "price": "$34.99",
+    "oldPrice": "$35.10",
+    "imgUrl": "https://m.media-amazon.com/images/I/51kxIEmO+ZL._AC_SL1286_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Logitech G432 Wired Gaming Headset, 7.1 Surround Sound, DTS Headphone:X 2.0, Flip-to-Mute Mic, PC (Leatherette) Black/Blue",
+    "color": "Black & Blue",
+    "size": "Headset",
+    "price": "$59.70",
+    "oldPrice": "$61.60",
+    "imgUrl": "https://m.media-amazon.com/images/I/61j6ey6mBpL._AC_SL1024_.jpg"
+  }
+]
