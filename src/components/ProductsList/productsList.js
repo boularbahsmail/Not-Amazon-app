@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 
 // SCSS
 import './productsList.scss';
 
 const ProductList = ({ products }) => {
+  // Scroll to top automatically
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
   return (
     <div className="container">
       <div className="Cards">

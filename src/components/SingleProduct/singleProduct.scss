@@ -1,0 +1,145 @@
+
+.Signle-Product {
+    .singleProductDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        margin: 40px 10px;
+        padding: 40px 10px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        .singleProductImg {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 210px;
+            }
+        }
+        .singleProductText {
+            width: 70%;
+            margin: 0 10px;
+            b {
+                color: darkred;
+                font-size: 20px;
+            }
+            strike {
+                color: gray;
+                font-size: 15px;
+                margin: 0 5px;
+            }
+            h2 {
+                line-height: 35px;
+            }
+            .addToCard {
+                padding: 20px 0;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: flex-start;
+                button {
+                    background-color: #000;
+                    text-transform: uppercase;
+                    color: #fff;
+                    cursor: pointer;
+                    text-align: center;
+                    height: 40px;
+                    width: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    &:active {
+                      transform: scale(0.97);
+                    }
+                }
+            }
+        }
+    }
+    .allExceptTheSelected {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        .otherProduct {
+            margin: 5px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            &:hover {
+                transform: scale(1.01);
+            }
+            .otherProductText {
+                h5 {
+                    line-height: 25px;
+                }
+                b {
+                    color: darkred;
+                }
+                strike {
+                    color: gray;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 1000px) {
+    .Signle-Product {
+        .allExceptTheSelected {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media only screen and (max-width: 810px) {
+    .Signle-Product {
+        .singleProductDiv {
+            .singleProductImg {
+                justify-content: flex-start;
+                img {
+                    width: 160px;
+                }
+            }
+            .singleProductText {
+                h2 {
+                    font-size: 19px;
+                }
+            }
+        }
+        .allExceptTheSelected {
+            grid-template-columns: 2fr 2fr;
+        }
+      }
+}
+@media only screen and (max-width: 650px) {
+    .Signle-Product {
+      .singleProductDiv {
+          display: block;
+          .singleProductImg {
+              width: auto;
+              margin: 0;
+              padding: 0 20px;
+              justify-content: flex-start;
+          }
+          .singleProductText {
+            width: auto;
+            padding: 0 5px;
+            margin-top: 25px;
+            padding-bottom: 0;
+            h2 {
+                font-size: 20px;
+            }
+        }
+      }
+      .allExceptTheSelected {
+        grid-template-columns: 1fr;
+      }
+    }
+  }

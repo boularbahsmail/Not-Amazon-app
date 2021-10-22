@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import products from '../data/data.json'
 
 // Components
-import SingleProduct from '../components/SingleProduct';
+import SingleProduct from '../components/SingleProduct/singleProduct';
 
 const Product_page = (props) => {
     // Scroll to top automatically

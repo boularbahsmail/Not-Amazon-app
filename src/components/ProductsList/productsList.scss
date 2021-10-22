@@ -35,7 +35,7 @@
       color: #000;
     }
     .Card {
-      padding: 10px;
+      padding: 10px 0;
       padding-bottom: 15px;
       background-color: #fff;
       border: 1px solid #eee;
@@ -103,6 +103,7 @@
 @media only screen and (max-width: 600px) {
   .container {
     .Cards {
+      padding: 0;
       .Card {
         display: block;
       }
