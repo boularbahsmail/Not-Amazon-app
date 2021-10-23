@@ -7,6 +7,7 @@ import products from '../data/data.json'
 
 
 const Home = () => {
+    document.title = "Not Amazon";
     return (
         <center>
             <div className="Home container">
