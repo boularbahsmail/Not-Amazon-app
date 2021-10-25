@@ -18,7 +18,7 @@ const Header = (props) => {
       </div>
 
       <div className="wishlist">
-        <Link to="" title="Shopping Card">
+        <Link to="/card" title="Shopping Card">
           <AiOutlineShoppingCart />
         </Link>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 
@@ -8,7 +8,7 @@ import products from '../../data/data.json';
 // SCSS
 import './singleProduct.scss';
 
-const Single_Product = ({ product }) => {
+const SingleProduct = ({ product }) => {
 
   // Set product name as the page title
   document.title = `Not Amazon - ${product.name}`;
@@ -21,12 +21,11 @@ const Single_Product = ({ product }) => {
     let others = [];
     let selectedProductName = product.name;
 
-    // Add products to localStorage
+    // Add products to user cookies
     const addToCard = () => {
       const cookies = new Cookies();
-      // cookies.set('Product', product, { path: '/' });
-      // console.log(cookies.get('Product'));
-      // cookies.remove('Product');
+      cookies.set('Product', product, { path: '/' });
+      console.log(cookies.get('Product'));
     }
 
     return (
@@ -45,7 +44,7 @@ const Single_Product = ({ product }) => {
                     <p>Size: {product.size}</p>
                     <b>{product.price}</b> <strike>{product.oldPrice}</strike>
                     <div className="addToCardDiv">
-                    <button title="Add to card">add to card</button>
+                    <button id="ADDandREMOVEbutton" title="Add to card" onClick={addToCard}>add to card</button>
                 </div>
             </div>
             </div>
@@ -55,9 +54,7 @@ const Single_Product = ({ product }) => {
                 {
                     products.filter((one) => {
                         if (one.name != selectedProductName) {
-                            // console.log(one);
                             others.push(one);
-                            // console.log(others)
                         }
                     })
                 }
@@ -85,4 +82,4 @@ const Single_Product = ({ product }) => {
     )
 }
 
-export default Single_Product;
+export default SingleProduct;

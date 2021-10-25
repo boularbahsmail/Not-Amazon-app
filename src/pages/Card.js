@@ -1,16 +1,18 @@
-import React from 'react';
-import Header from '../components/Header';
+import Reac, { useEffect } from 'react';
 
-const Card = () => {
-    document.title = "Not Amazon - Shopping Card";
+const Card = (props) => {
+    // Scroll to top automatically
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <center>
-            <div className="Card container">
-              <Header />
-              <h1>Card</h1>
+            <div className="container" style={{ textAlign: "left" }}>
+                <h1>Fuck</h1>
             </div>
         </center>
     )
 }
 
-export default Card
+export default Card;
